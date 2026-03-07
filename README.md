@@ -1,202 +1,238 @@
-# Lipschitz Ezekiel - Full Stack Portfolio
+# Balogun Ezekiel Oluwatosin - Portfolio
 
-A modern, production-ready portfolio website showcasing **full-stack architecture** with:
-- **Backend:** Django REST APIs and FastAPI microservices
-- **Frontend:** TypeScript-powered Next.js
-- **AI/ML:** LangChain and OpenAI integration
-- **DevOps:** Docker, Kubernetes, and cloud deployment
+A clean, modern portfolio website showcasing **full-stack software engineering** experience with focus on **RESS architecture** principles (Reliability, Extensibility, Scalability, Security).
 
-## 🏗️ Architecture
+Built with **HTML5, CSS3, and vanilla JavaScript** for maximum performance and simplicity.
+
+## 📋 About
+
+Full-Stack Software Engineer specializing in:
+- **Backend Development:** Django, Django REST Framework, FastAPI, Python
+- **Database Architecture:** PostgreSQL, SQLite, schema design with Alembic
+- **Authentication & Security:** JWT, Firebase Auth, CSRF protection, XSS prevention
+- **DevOps & Infrastructure:** Docker, Docker Compose, Render, Heroku
+- **Async Processing:** Celery, Redis, background task queues
+- **API Design:** RESTful APIs, Swagger/OpenAPI documentation
+
+## 🏗️ Project Structure
 
 ```
 Ezek-port/
-├── app/                      # Next.js App Router
-│   ├── components/          # React Components (TypeScript)
-│   ├── layout.tsx          # Root layout
-│   └── page.tsx            # Home page
-├── backend/                 # FastAPI + Django
-│   ├── main.py             # FastAPI application
-│   ├── database.py         # Database configuration
-│   ├── schemas.py          # Pydantic models
-│   ├── utils.py            # Utilities
-│   ├── django_settings.py  # Django configuration
-│   └── requirements.txt    # Python dependencies
-├── lib/                     # Utilities & API clients
-│   └── api-client.ts       # Backend API client
-├── types/                   # TypeScript types
-├── styles/                  # Global styles
-├── package.json            # Node dependencies
-├── tsconfig.json           # TypeScript config
-├── next.config.js          # Next.js configuration
-├── tailwind.config.js      # Tailwind configuration
-└── .env.example            # Environment template
+├── index.html                # Main HTML file with complete portfolio content
+├── css/
+│   └── style.css            # All styling (dark theme, responsive design)
+├── js/
+│   └── script.js            # Navigation, smooth scrolling, form handling
+├── images/                  # Project screenshots, profile photo
+│   └── Picture.jpg          # Profile photo
+├── files/
+│   └── cv.pdf               # CV/Resume download
+├── README.md                # This file
+└── .gitignore               # Git ignore file
 ```
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 18+ (Frontend)
-- Python 3.11+ (Backend)
-- PostgreSQL 14+ (Database)
-- Redis 7+ (Caching & Celery)
+### View Locally
 
-### 1. Frontend Setup
+**Option 1: Direct Open**
+- Double-click `index.html` to open in your browser
 
+**Option 2: Live Server (VSCode)**
+1. Install "Live Server" extension
+2. Right-click `index.html`
+3. Select "Open with Live Server"
+
+**Option 3: Python HTTP Server**
 ```bash
-# Install dependencies
-npm install
+# Python 3
+python -m http.server 8000
 
-# Set up environment
-cp .env.example .env.local
-# Edit .env.local with your values
+# Python 2
+python -m SimpleHTTPServer 8000
 
-# Development server
-npm run dev
-# Open http://localhost:3000
+# Open http://localhost:8000
 ```
 
-### 2. Backend Setup (FastAPI)
+## 📄 Portfolio Sections
 
-```bash
-# Create Python virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+### 1. **Home/Hero**
+- Profile introduction
+- Quick summary
+- Call-to-action buttons (Contact & Download CV)
 
-# Install dependencies
-pip install -r backend/requirements.txt
+### 2. **Professional Profile**
+- Comprehensive professional summary
+- RESS engineering philosophy
 
-# Set up environment
-cp .env.example .env
-# Edit .env with your database and API keys
+### 3. **Technical Skills**
+- Backend Development (Django, FastAPI, Python)
+- Frontend Integration (Next.js, API Consumption)
+- Databases (PostgreSQL, SQLite)
+- Authentication & Security
+- DevOps & Infrastructure
+- Async & Background Processing
+- Testing & Debugging
+- Tools & Platforms
 
-# Run FastAPI server
-npm run api:dev
-# API available at http://localhost:8000
+### 4. **Work Experience**
+- **Accessivo** - Backend Developer (Django) - 2025
+  - RESTful APIs, database design, JWT authentication
+  - Financial integrations (VFD Bank, Topupbox, Clubkonnect)
+  - Security implementation (XSS, CSRF protection)
+  
+- **ArchsaintNexus** - Backend Developer Intern
+  - Django REST Framework development
+  - Webhook integration and processing
+  - Celery & Redis for async tasks
+  - Docker containerization
 
-# API Documentation
-# Swagger UI: http://localhost:8000/docs
-# ReDoc: http://localhost:8000/redoc
+### 5. **Project Experience**
+- **Health Mate** - Full-stack healthcare platform
+  - Django + Next.js + Firebase Authentication
+  - Appointment booking, telehealth, medical records
+  
+- **Onyi Gifting Platform** - FastAPI backend
+  - Modular RESTful API design
+  - JWT authentication with token refresh
+  - Cloudinary image/audio integration
+  - Alembic schema migrations
+  - Comprehensive pytest coverage
+  
+- **Outlier** - AI Prompt Engineer
+  - Context-aware prompt engineering
+  - GPT optimization and scaling
+
+### 6. **Education**
+- B.Sc. Mathematics Education
+- University of Lagos (2019-2023)
+
+### 7. **Certifications**
+- Kubernetes and Cloud Native Essentials Training
+- The Linux Foundation (via Andela Learning Program) - 2026
+
+### 8. **Contact**
+- Email, phone, address, social links
+- Contact form for inquiries
+- Specializations overview
+
+## 🎨 Design
+
+- **Dark Theme:** Professional dark mode with purple/cyan accents
+- **Responsive:** Mobile-first design (works on all devices)
+- **Smooth Animations:** Transitions, hover effects, scroll animations
+- **Performance:** No external dependencies, pure HTML/CSS/JS
+- **Accessibility:** Semantic HTML, proper contrast ratios
+
+## 🔧 Customization
+
+### Change Colors
+Edit `:root` variables in `css/style.css`:
+```css
+:root {
+    --primary-color: #6366f1;      /* Purple */
+    --secondary-color: #8b5cf6;    /* Light Purple */
+    --accent: #22d3ee;              /* Cyan */
+    --dark-bg: #0f172a;             /* Dark Blue-Black */
+    --card-bg: #1e293b;             /* Card Background */
+}
 ```
 
-### 3. Backend Setup (Django - Optional)
-
-```bash
-# Install Django dependencies
-pip install django djangorestframework django-cors-headers celery redis
-
-# Run migrations
-python manage.py migrate
-
-# Start Django server
-npm run api:django
+### Update Navigation
+Edit navigation links in `index.html`:
+```html
+<ul id="navMenu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <!-- Add more sections -->
+</ul>
 ```
 
-## 📦 Tech Stack
-
-### Frontend
-- **Framework:** Next.js 14+
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **State Management:** React Hooks
-- **HTTP Client:** Axios / HTTPX
-- **Deployment:** Vercel
-
-### Backend
-- **FastAPI:** Async Python web framework
-- **Django:** Full-stack framework (optional)
-- **Database:** PostgreSQL
-- **ORM:** SQLAlchemy (FastAPI) / Django ORM
-- **Task Queue:** Celery + RabbitMQ/Redis
-- **Caching:** Redis
-- **API Documentation:** Swagger/OpenAPI
-
-### AI/ML Integration
-- **LLM Framework:** LangChain
-- **LLM Provider:** OpenAI API
-- **Prompt Engineering:** Custom chains
-
-### DevOps
-- **Containerization:** Docker
-- **Orchestration:** Kubernetes (optional)
-- **CI/CD:** GitHub Actions
-- **Cloud Platforms:** Render, Vercel, AWS
-
-## 🔧 Development
-
-### Scripts
-
-```bash
-# Frontend
-npm run dev          # Start development server
-npm run build        # Build for production
-npm start           # Start production server
-npm run lint        # Run ESLint
-npm run type-check  # TypeScript type checking
-npm run format      # Format code with Prettier
-
-# Backend
-npm run api:dev     # Start FastAPI dev server
-npm run api:django  # Start Django server
-```
-
-### Environment Variables
-
-Create `.env.local`:
-
-```env
-# Frontend
-NEXT_PUBLIC_API_URL=http://localhost:8000/api
-
-# Backend
-DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/portfolio
-REDIS_URL=redis://localhost:6379/0
-OPENAI_API_KEY=sk-...
-```
+### Add Your Content
+1. **Profile Photo:** Add your image to `images/` folder as `Picture.jpg`
+2. **CV:** Add your CV to `files/` folder as `cv.pdf`
+3. **Project Images:** Add screenshots to `images/` folder
+4. **Update Text:** Edit content directly in `index.html`
 
 ## 📱 Features
 
-- ✅ **Fully Responsive** - Mobile, tablet, desktop
-- ✅ **TypeScript** - Full type safety
-- ✅ **Dark Theme** - Modern gradient design
-- ✅ **Smooth Navigation** - Optimized UX
-- ✅ **Contact Form** - Form validation & submission
-- ✅ **Projects Showcase** - Featured projects
-- ✅ **Skills Grid** - Technical expertise
-- ✅ **Experience Timeline** - Professional journey
-- ✅ **API Integration** - Backend communication
-- ✅ **SEO Optimized** - Meta tags & structure
+- ✅ **Fully Responsive** - Desktop, tablet, mobile
+- ✅ **Dark Theme** - Modern gradient design with cyan/purple accents
+- ✅ **Smooth Navigation** - Fixed header with smooth scrolling
+- ✅ **Mobile Menu** - Hamburger menu for mobile devices
+- ✅ **Contact Form** - Professional contact section with inline info
+- ✅ **Projects Showcase** - Detailed project cards with skills
+- ✅ **Experience Timeline** - Professional journey with achievements
+- ✅ **Skills Grid** - Organized technical expertise
+- ✅ **Download CV** - One-click CV download button
+- ✅ **Social Links** - LinkedIn, GitHub, Portfolio links
+- ✅ **SEO Optimized** - Meta tags and semantic HTML
 
-## 🚢 Deployment
+## 🚀 Deployment
 
-### Frontend (Vercel)
+### Deploy to Vercel (Recommended)
+
+**Method 1: GitHub + Vercel**
+1. Push code to GitHub repository
+2. Go to [vercel.com](https://vercel.com)
+3. Sign in with GitHub
+4. Click "New Project" and import your repository
+5. Click "Deploy"
+6. Your portfolio is live!
+
+**Method 2: Vercel CLI**
 ```bash
-npm run build
-vercel deploy
+# Install Vercel CLI
+npm install -g vercel
+
+# Login
+vercel login
+
+# Deploy
+vercel
+
+# Follow prompts
 ```
 
-### Backend (Render/Railway)
-```bash
-# Create Procfile
-web: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
-```
+**Method 3: Direct Upload**
+1. Go to [vercel.com](https://vercel.com)
+2. Drag and drop your project folder
+3. Done!
 
-## 📚 API Endpoints
+### Deploy to Other Platforms
 
-### FastAPI
-- `GET /api/health` - Health check
-- `GET /api/projects` - Get all projects
-- `POST /api/contact` - Submit contact form
-- `GET /api/skills` - Get skills list
+- **Netlify:** Drag & drop folder or connect GitHub
+- **GitHub Pages:** Push to gh-pages branch
+- **Render:** Connect GitHub repo with static site settings
+- **Firebase Hosting:** Use Firebase CLI for deployment
 
-## 🔐 Security
+## 📊 Performance
 
-- ✅ TypeScript type safety
-- ✅ CORS configuration
-- ✅ Rate limiting ready
-- ✅ SQL injection prevention (SQLAlchemy ORM)
-- ✅ Input validation (Pydantic)
-- ✅ Environment variables for secrets
+- **Zero Dependencies:** Pure HTML/CSS/JavaScript
+- **Fast Loading:** No external frameworks or libraries
+- **Optimized Images:** Compressed and optimized
+- **Clean Code:** Semantic HTML, organized CSS, readable JavaScript
+- **Mobile First:** Progressive enhancement approach
+
+## 📝 Contact Information
+
+- **Email:** ezekielbalogun56@gmail.com
+- **Phone:** +234 901 839 1336
+- **Address:** 7B, University Road Abule Oja | Lagos, Nigeria
+- **LinkedIn:** [Balogun Ezekiel](https://linkedin.com/in/balogun-ezekiel-474a90323/)
+- **GitHub:** [@ezekiel780](https://github.com/ezekiel780)
+
+## 📄 License
+
+© 2026 Balogun Ezekiel Oluwatosin. All rights reserved.
+
+## 🤝 Support
+
+For questions or inquiries about projects and opportunities, use the contact form on the portfolio or email directly.
+
+---
+
+**Last Updated:** March 2026
 
 ## 📝 License
 
