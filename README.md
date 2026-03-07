@@ -1,4 +1,4 @@
-# Balogun Ezekiel Oluwatosin - Portfolio
+# Ezekiel Lipschitz Oluwatosin - Portfolio
 
 A clean, modern portfolio website showcasing **full-stack software engineering** experience with focus on **RESS architecture** principles (Reliability, Extensibility, Scalability, Security).
 
@@ -224,7 +224,7 @@ vercel
 
 ## 📄 License
 
-© 2026 Balogun Ezekiel Oluwatosin. All rights reserved.
+© 2026 Ezekiel Lipschitz Oluwatosin. All rights reserved.
 
 ## 🤝 Support
 
