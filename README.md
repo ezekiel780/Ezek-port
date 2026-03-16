@@ -8,7 +8,7 @@ Built with **HTML5, CSS3, and vanilla JavaScript** for maximum performance and s
 
 Full-Stack Software Engineer specializing in:
 - **Backend Development:** Django, Django REST Framework, FastAPI, Python
-- **Game Development:** Godot 4, GDScript, 2D tilemaps, animation, save/load systems
+- **Game Development:** Godot 4, GDScript, 2D tilemaps, animation, physics (Newtonian motion + projectile mechanics), save/load systems
 - **Database Architecture:** PostgreSQL, SQLite, schema design with Alembic
 - **Authentication & Security:** JWT, Firebase Auth, CSRF protection, XSS prevention
 - **DevOps & Infrastructure:** Docker, Docker Compose, Render, Heroku
