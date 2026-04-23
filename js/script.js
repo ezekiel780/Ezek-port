@@ -195,11 +195,11 @@ const debouncedScroll = debounce(function() {
 window.addEventListener('scroll', debouncedScroll);
 
 // ===================================
-// Console Message (Optional)
+// Console Message
 // ===================================
 
-console.log('%c👋 Hi there!', 'font-size: 20px; color: #6366f1; font-weight: bold;');
-console.log('%cInterested in working together? Reach out at ezekielbalogun56@gmail.com', 'font-size: 14px; color: #22d3ee;');
+console.log('%c👋 Hi there!', 'font-size: 20px; color: #22c55e; font-weight: bold;');
+console.log('%cInterested in working together? Reach out at ezekielbalogun56@gmail.com', 'font-size: 14px; color: #eab308;');
 
 // ===================================
 // Prevent Right Click (Optional - Remove if not needed)
@@ -209,7 +209,7 @@ console.log('%cInterested in working together? Reach out at ezekielbalogun56@gma
 // document.addEventListener('contextmenu', event => event.preventDefault());
 
 // ===================================
-// Loading Animation (Optional)
+// Loading Animation
 // ===================================
 
 window.addEventListener('load', function() {
